@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="HandheldFriendly" content="True" />
+    <title>サイトタイトル</title>
+    <link rel="icon" href="favicon.ico" type="image/png">
+    <link rel="canonical" href="サイトURL">
+    <link rel="stylesheet" href="CSSのURL">
+    <style>
+        *, *::before, *::after {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        html, body {
+            width: 100%;
+            height: 100%;
+        }
+        header {
+            position: fixed;
+            z-index: 9999;
+            width: 100%;
+            height: 90px;
+            padding: 20px;
+        }
+        header a {
+            float: left;
+        }
+        header nav {
+            float: right;
+        }
+        header nav li{
+            float: right;
+            margin-right: 15px;
+            list-style-type: none;
+        }
+        header nav li a{
+            color: white;
+        }
+        #video-wrapper {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            height: 100vh;
+        }
+        #video-wrapper video {
+            background-attachment: fixed;
+            background-position: center center;
+            background-size: cover;
+            min-width: 100vw;
+            min-height: 100vh;
+        }
+        #video-wrapper .text {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            z-index: 10;
+            color: white;
+            font-size: 90px;
+        }
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 25px;
+        }
+        main div {
+            width: 49%;
+            height: 500px;
+            background-color: white;
+            border: 1px solid #888;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img src="logo.png" width="214" height="50" alt="logo">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="#">HOLDINGS INTRODUCTION</a></li>
+                <li><a href="#">GROUP COMPANY</a></li>
+                <li><a href="#">RECRUIT</a></li>
+                <li><a href="#">CONTACT US</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="video-wrapper">
+        <video autoplay loop muted playsinline>
+            <source src="sample2.mp4">
+        </video>
+        <div class="text">
+            G-HOLDINGS
+        </div>
+    </div>
+    <main>
+        <div>
+            コンテンツ1
+        </div>
+        <div>
+            コンテンツ2
+        </div>
+        <div>
+            コンテンツ3
+        </div>
+        <div>
+            コンテンツ4
+        </div>
+    </main>
+    <footer>
+    </footer>
+</body>
+</html>
